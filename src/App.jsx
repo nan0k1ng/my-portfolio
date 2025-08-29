@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Navbar from './components/navbar';
+import Hero from './components/hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Footer from './components/Footer'; // 👈 Import Footer
+import Footer from './components/footer'; // 👈 Import Footer
+import { Analytics } from "@vercel/analytics/next"
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero');
